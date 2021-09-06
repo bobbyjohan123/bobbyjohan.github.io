@@ -1,29 +1,108 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<title>PAHLAWAN</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-header {
-  text-align:center;
-  background-calor:DodgerBlue;">DodgerBlue
-  font-size;30px;
-  color:wite;
-  font family
+* {
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: blue ;
+  background-image: url("bendera.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backgraund-size:cover;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 <body>
+
+<h2>PAHLAWAN KEMERDEKAAN</h2>
+<p>pahlawan indonesia rela mati untuk kemerdekaan.</p>
+<p>Seseorang yang semasa hidupnya karena terdorong rasa cinta tanah air, sangat berjasa dalam memimpin suatu kegiatan yang teratur guna menentang penjajahan di Indonesia, melawan musuh dari luar negeri, ataupun sangat berjasa baik dalam lapangan politik ketatanegaraan, sosial ekonomi, kebudayaan maupun dalam lapangan ilmu pengetahuan yang erat hubungannya dengan perjuangan kemerdekaan dan perkembangan Indonesia.</p>
+
 <header>
- <h1> caffe </h1>
-<header>
+  <h2>PAHLAWAN KEMERDEKAAN</h2>
+</header>
 
 <section>
-<nev>
- 
-</nev>
-<article>
-
-</article>
+  <nav>
+    <ul>
+      <li><a href="#">Ir Soekarno</a></li>
+      <li><a href="#">Dr.H.C. Drs. H. Mohammad Hatta</a></li>
+      <li><a href="#">Prof. Mr. Mohammad Yamin, S.H.</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1> Ir Soekarno</h1>
+    <p>Dr.H.C.Ir.H.Soekarno.Sukarno, nama asli Koesno Sosrodihardjo (lahir di Soerabaja, 6 Juni 1901 – meninggal di Jakarta, 21 Juni 1970 pada umur 69 tahun) beliau adalah Presiden pertama Republik Indonesia yang menjabat pada periode 1945–1967.</p>
+    <p> Ia adalah seorang tokoh perjuangan yang memainkan peranan penting dalam memerdekakan bangsa Indonesia dari penjajahan Belanda. Ia adalah Proklamator Kemerdekaan Indonesia (bersama dengan Mohammad Hatta) yang terjadi pada tanggal 17 Agustus 1945. Soekarno adalah yang pertama kali mencetuskan konsep mengenai Pancasila sebagai dasar negara Indonesia dan ia sendiri yang menamainya.</p>
+  </article>
 </section>
+
 <footer>
+  <p>Footer</p>
+</footer>
 
 </body>
 </html>
+
